@@ -1,0 +1,100 @@
+[
+  {
+    "file": "pi0.pdf",
+    "url": "https://www.pi.website/download/pi0.pdf",
+    "bytes": 7873003,
+    "sha256": "75667e62ba43f153805f2330b55966d0ff51abd03aa0ab76ef2d62ab201cc1fd"
+  },
+  {
+    "file": "pi05.pdf",
+    "url": "https://www.pi.website/download/pi05.pdf",
+    "bytes": 5079459,
+    "sha256": "f5d0aa0b652f188e6649a83a54d704e14393299676754c01525e3964767db7c8"
+  },
+  {
+    "file": "ki.pdf",
+    "url": "https://www.pi.website/download/pi05_KI.pdf",
+    "bytes": 7317039,
+    "sha256": "9ddcecfb7c023eca357bfe2f20e74600bd8de9856eb8944634bcb64124fdb25d"
+  },
+  {
+    "file": "pistar06.pdf",
+    "url": "https://www.pi.website/download/pistar06.pdf",
+    "bytes": 6043825,
+    "sha256": "6b37590a1f17e415df93b456a65ad399788126c5a610e85122e69e471a509223"
+  },
+  {
+    "file": "mem.pdf",
+    "url": "https://www.pi.website/download/Mem.pdf",
+    "bytes": 9037715,
+    "sha256": "63413aa32bb2b070ae0a0cbc5d5a2eb77686308725e48f15bcaa338bd3d644aa"
+  },
+  {
+    "file": "rlt.pdf",
+    "url": "https://www.pi.website/download/RLT.pdf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "pi07.pdf",
+    "url": "https://www.pi.website/download/pi07.pdf",
+    "bytes": 5357105,
+    "sha256": "d718dbcfcf294f87a2179052dcd2e783ea1f542f484d05dfa2ce139bc00d7d5b"
+  },
+  {
+    "file": "fast.pdf",
+    "url": "https://arxiv.org/pdf/2501.09747",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "file": "rtc.pdf",
+    "url": "https://arxiv.org/pdf/2506.07339",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "file": "rtc_training.pdf",
+    "url": "https://arxiv.org/pdf/2512.05964",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "file": "openpi_README.md",
+    "url": "https://raw.githubusercontent.com/Physical-Intelligence/openpi/main/README.md",
+    "bytes": 23254,
+    "sha256": "567fc57766bd736664f50126cab8145af4071ca16cc5e238f2b11e369169c3b5"
+  },
+  {
+    "file": "openpi_pi0.py",
+    "url": "https://raw.githubusercontent.com/Physical-Intelligence/openpi/main/src/openpi/models/pi0.py",
+    "bytes": 12887,
+    "sha256": "24b32d7c6ed5e409459afa8ca5af96a4dae09c2dcdf48e828907e411f4f12342"
+  },
+  {
+    "file": "openpi_pi0_config.py",
+    "url": "https://raw.githubusercontent.com/Physical-Intelligence/openpi/main/src/openpi/models/pi0_config.py",
+    "bytes": 4435,
+    "sha256": "d321858c30b398126035ea2b6da09e1c422eeeebb5ebf8df631daf9dc77647fa"
+  },
+  {
+    "file": "openpi_config.py",
+    "url": "https://raw.githubusercontent.com/Physical-Intelligence/openpi/main/src/openpi/training/config.py",
+    "bytes": 44594,
+    "sha256": "c34231f888dba5dc981d808765b3d98775ab845b04313bf53fcecd567c520b0d"
+  },
+  {
+    "file": "openpi_train.py",
+    "url": "https://raw.githubusercontent.com/Physical-Intelligence/openpi/main/scripts/train.py",
+    "bytes": 10488,
+    "sha256": "22f98a06aaa6e68e0f725d727ab95398238d1cae8a46bb94e829f330758a9baf"
+  },
+  {
+    "file": "openpi_transforms.py",
+    "url": "https://raw.githubusercontent.com/Physical-Intelligence/openpi/main/src/openpi/transforms.py",
+    "bytes": 15752,
+    "sha256": "a1b94e9e72849a18834778f229c6bb389a495eb7fbe0aa800edea728b9424ff4"
+  },
+  {
+    "file": "openpi_commit.json",
+    "url": "https://api.github.com/repos/Physical-Intelligence/openpi/commits/main",
+    "bytes": 5703,
+    "sha256": "316e846ea82b31fb9bd5f7e8968c637fa6c012ebb021257ef338457bf4a577f5"
+  }
+]
