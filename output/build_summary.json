@@ -1,7 +1,8 @@
 {
-  "characters": 39377,
-  "chinese_characters": 21474,
+  "characters": 42989,
+  "chinese_characters": 22213,
   "figures": 18,
   "chapters": 22,
-  "sources": 19
+  "sources": 19,
+  "math_expressions": 196
 }

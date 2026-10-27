@@ -15,5 +15,5 @@ nodes.s.value='55';vm.runInContext('update()',context);assert.match(nodes.rtcout
 nodes.b.value='0';vm.runInContext('update()',context);assert.match(nodes.batchout.textContent,/正整数/);
 const ids=new Set([...page.matchAll(/id="([^"]+)"/g)].map(m=>m[1]));
 for(const m of page.matchAll(/href="#([^"]+)"/g))assert.ok(ids.has(m[1]),`missing ${m[1]}`);
-assert.equal([...page.matchAll(/data:image\/png;base64/g)].length,18);
+assert.equal([...page.matchAll(/<figure><img src="data:image\/png;base64/g)].length,18);
 console.log('HTML checks passed: calculators, invalid inputs, 22 navigation targets, 18 embedded images.');

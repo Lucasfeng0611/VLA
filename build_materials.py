@@ -8,6 +8,17 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_CENTER
 from reportlab.platypus import BaseDocTemplate, PageTemplate, Frame, Paragraph, Spacer, PageBreak, CondPageBreak, Image as RLImage, Table, TableStyle, KeepTogether
 from reportlab.platypus.tableofcontents import TableOfContents
+from math_render import inline_math, display_math, asset as math_asset, manifest as math_manifest, CACHE as MATH_CACHE
+
+class MathParagraph(Paragraph):
+    """Treat inline math as an atomic CJK object, including at line boundaries."""
+    def __init__(self,*args,**kwargs):
+        super().__init__(*args,**kwargs)
+        for frag in self.frags:
+            if getattr(getattr(frag,'cbDefn',None),'kind',None)=='img' and not frag.text:
+                frag.text='\ufffc'
+
+Paragraph=MathParagraph
 
 ROOT=Path(__file__).parent.resolve()
 OUT=ROOT/'output'; OUT.mkdir(exist_ok=True)
@@ -16,9 +27,28 @@ FONT='C:/Windows/Fonts/msyh.ttc'; BOLD='C:/Windows/Fonts/msyhbd.ttc'
 W=1500; H=650
 INK='#173245'; MUTED='#526878'; BLUE='#166d9c'; TEAL='#007f7a'; ORANGE='#bc681e'; RED='#b94c53'; BG='#f4f8fa'; LINE='#bdcdd7'
 def fnt(n=34,b=False): return ImageFont.truetype(BOLD if b else FONT,n)
+def figure_line(d,xy,line,size=29,color=INK,b=False):
+    if line.startswith('$') and line.endswith('$'):
+        a=math_asset(line[1:-1]);pic=Image.open(a['png']).convert('RGBA')
+        pic=pic.resize((round(a['width']*size/12),round(a['height']*size/12)),Image.Resampling.LANCZOS)
+        d._image.paste(pic,(round(xy[0]),round(xy[1])),pic)
+    elif '$' in line:
+        x,y=xy
+        for run in re.split(r'(\$[^$]+\$)',line):
+            if run.startswith('$') and run.endswith('$'):
+                a=math_asset(run[1:-1]);pic=Image.open(a['png']).convert('RGBA')
+                pic=pic.resize((round(a['width']*size/12),round(a['height']*size/12)),Image.Resampling.LANCZOS)
+                top=y+size*1.05-(a['height']-a['depth'])*size/12
+                d._image.paste(pic,(round(x),round(top)),pic);x+=pic.width
+            else:
+                d.text((x,y),run,font=fnt(size,b),fill=color);x+=fnt(size,b).getlength(run)
+    else:d.text(xy,line,font=fnt(size,b),fill=color)
 def wrap(text,width,font):
     result=[]
     for raw in str(text).replace('ᵀ','^T').replace('ᶜ','^C').split('\n'):
+        if raw.startswith('$') and raw.endswith('$'):
+            a=math_asset(raw[1:-1]);assert a['width']*font.size/12<=width,raw
+            result.append(raw);continue
         line=''
         for c in raw:
             if font.getlength(line+c)>width and line:
@@ -36,7 +66,7 @@ def txt(d,xy,text,size=32,color=INK,b=False,width=None):
     text=str(text).replace('ᵀ','^T').replace('ᶜ','^C')
     font=fnt(size,b); lines=wrap(text,width,font) if width else str(text).split('\n')
     x,y=xy
-    for line in lines:d.text((x,y),line,font=font,fill=color); y+=size*1.43
+    for line in lines:figure_line(d,(x,y),line,size,color,b); y+=size*1.43
 def box(d,x,y,w,h,title,body='',color=BLUE):
     d.rounded_rectangle((x,y,x+w,y+h),radius=16,fill=BG,outline=LINE,width=2)
     d.rectangle((x,y+15,x+5,y+h-15),fill=color)
@@ -49,7 +79,7 @@ def box(d,x,y,w,h,title,body='',color=BLUE):
         if bs<24:raise ValueError(f'box overflow: {title}, {body}')
     yy=y+13
     for l in tl:d.text((x+18,yy),l,font=fnt(ts,True),fill=color); yy+=ts*1.35
-    for l in bl:d.text((x+18,yy+5),l,font=fnt(bs),fill=INK); yy+=bs*1.35
+    for l in bl:figure_line(d,(x+18,yy+5),l,bs); yy+=bs*1.35
 def arrow(d,a,b,color=TEAL,width=5):
     d.line([a,b],fill=color,width=width)
     ang=math.atan2(b[1]-a[1],b[0]-a[0]); sz=15
@@ -69,18 +99,18 @@ save(im,'01_system.png')
 
 im,d=canvas('Attention：按相关性汇聚信息','先匹配 Q 与 K，再用权重汇聚 V；mask 限定哪些信息可见')
 for x,t,b in [(45,'Q：查询','动作位置需要什么信息？'),(535,'K：索引','图像 / 指令如何匹配？'),(1025,'V：内容','最终要传递的特征')]: box(d,x,135,430,140,t,b)
-box(d,290,360,420,175,'匹配与归一化','QKᵀ / sqrt(d_k) + mask\n逐行 softmax → 权重')
+box(d,290,360,420,175,'匹配与归一化',r'$QK^{\mathsf{T}}/\sqrt{d_k}+M$'+'\n逐行 softmax → 权重')
 box(d,920,360,420,175,'加权汇聚','权重 × V\n得到新的 token 表示',TEAL)
 arrow(d,(260,275),(430,360));arrow(d,(750,275),(580,360));arrow(d,(1240,275),(1140,360));arrow(d,(710,450),(920,450))
 save(im,'02_attention.png')
 
-im,d=canvas('B、K、H、d_a：四个独立维度','教学示例：B=8，K=6，H=50，d_a=14，三相机')
+im,d=canvas('B、K、H 与每步动作维数：四个独立维度','教学示例：B=8，K=6，H=50，每步动作 14 维，三相机')
 box(d,45,145,420,190,'B：样本数','8 个轨迹锚点\n用于估计一次更新的梯度')
 box(d,540,145,420,190,'K：过去帧数','每个样本看 6 个历史时刻\n保留过去的信息')
-box(d,1035,145,420,190,'H × d_a：未来标签','50 步 × 每步 14 维动作\n描述将来的控制目标')
-txt(d,(70,400),'图像： [8, 6, 3, 高, 宽, 3]',43,b=True)
-txt(d,(70,475),'动作： [8, 50, 14]    =    8 个样本 / 400 个时间位置',38,color=TEAL)
-txt(d,(70,550),'同一 chunk 内的动作高度相关，不能按独立样本计数。',32,color=MUTED)
+box(d,1035,145,420,190,'未来动作块：H 步','50 步 × 每步 14 维动作\n描述将来的控制目标')
+txt(d,(70,400),r'图像： $[8,6,3,H_{\mathrm{img}},W_{\mathrm{img}},3]$',43,b=True)
+txt(d,(70,475),r'动作： $[8,50,14]$    即 8 个样本 / 400 个时间位置',38,color=TEAL)
+txt(d,(70,550),'同一动作块内的动作高度相关，不能按独立样本计数。',32,color=MUTED)
 save(im,'03_tensor.png')
 
 im,d=canvas('多峰策略与流匹配：生成一条自洽动作轨迹','左：两种有效路线的平均可能无效；右：生成时间不是真实控制时间')
@@ -92,7 +122,7 @@ for yy,col in [(220,BLUE),(490,TEAL)]:
     pts=[(135,360),(240,yy),(470,yy),(600,360)];d.line(pts,fill=col,width=7)
 d.line((135,360,600,360),fill=RED,width=4)
 txt(d,(160,165),'路线 A',30,color=BLUE);txt(d,(440,555),'路线 B',30,color=TEAL)
-box(d,780,160,580,150,'训练：学会向哪个方向变化','Xτ = (1−τ)ε + τA\n速度目标：A−ε')
+box(d,780,160,580,150,'训练：学会向哪个方向变化',r'$X_\tau=(1-\tau)\varepsilon+\tau A$'+'\n速度目标：A−ε')
 box(d,780,390,580,150,'推理：从噪声逐步积分','噪声 → 中间动作 → 完整动作块\nτ：0 → 1；真实机器人尚未执行',TEAL)
 arrow(d,(1070,310),(1070,390));save(im,'04_flow.png')
 
@@ -109,12 +139,12 @@ box(d,45,145,360,160,'图像 + 语言','视觉编码 / 分词 / 嵌入')
 box(d,570,145,420,160,'VLM 骨干约 3B','条件表征；可缓存前缀 K/V')
 box(d,45,420,360,160,'本体状态 + 带噪动作','投影并加入生成时间条件')
 box(d,570,420,420,160,'动作专家约 300M','反复更新向量场\n动作 token 内部双向 attention',TEAL)
-box(d,1130,420,320,160,'连续动作块','H × d_a\n反归一化后执行',TEAL)
+box(d,1130,420,320,160,'连续动作块',r'$H\times d_a$'+'\n反归一化后执行',TEAL)
 arrow(d,(405,225),(570,225));arrow(d,(405,500),(570,500));arrow(d,(780,305),(780,420));arrow(d,(990,500),(1130,500))
 save(im,'06_pi0.png')
 
 im,d=canvas('FAST：先压缩时间结构，再学习离散 token','DCT 沿时间轴；量化有损；BPE 在固定词表下可逆')
-for x,t,b in [(40,'① 归一化动作','每维统一尺度\n输入 H × d_a'),(540,'② DCT','时间序列 → 频率系数\n平稳变化集中在低频'),(1040,'③ 量化','系数 → 整数\n引入重建误差')]:box(d,x,145,420,170,t,b)
+for x,t,b in [(40,'① 归一化动作','每维统一尺度\n'+r'$H\times d_a$'),(540,'② DCT','时间序列 → 频率系数\n平稳变化集中在低频'),(1040,'③ 量化','系数 → 整数\n引入重建误差')]:box(d,x,145,420,170,t,b)
 arrow(d,(460,230),(540,230));arrow(d,(960,230),(1040,230))
 box(d,1040,420,420,150,'④ 展平','按固定顺序组织系数',TEAL);box(d,540,420,420,150,'⑤ BPE','常见序列合并为动作 token',TEAL);box(d,40,420,420,150,'自回归策略','训练预测 token；推理后逆解码',TEAL)
 arrow(d,(1250,315),(1250,420));arrow(d,(1040,495),(960,495));arrow(d,(540,495),(460,495))
@@ -232,18 +262,24 @@ text='\n\n'.join(p.read_text(encoding='utf-8') for p in sorted((ROOT/'materials'
 pdfmetrics.registerFont(TTFont('Yahei',FONT));pdfmetrics.registerFont(TTFont('YaheiBold',BOLD))
 pdfmetrics.registerFontFamily('Yahei',normal='Yahei',bold='YaheiBold',italic='Yahei',boldItalic='YaheiBold')
 styles={
-'body':ParagraphStyle('body',fontName='Yahei',fontSize=10.2,leading=16.2,spaceAfter=7,wordWrap='CJK',textColor=colors.HexColor(INK)),
+'body':ParagraphStyle('body',fontName='Yahei',fontSize=10.2,leading=16.2,autoLeading='max',allowWidows=0,spaceAfter=7,wordWrap='CJK',textColor=colors.HexColor(INK)),
 'h2':ParagraphStyle('h2',fontName='YaheiBold',fontSize=21,leading=30,spaceAfter=17,wordWrap='CJK',textColor=colors.HexColor(INK),keepWithNext=True),
 'h3':ParagraphStyle('h3',fontName='YaheiBold',fontSize=13,leading=21,spaceBefore=12,spaceAfter=8,wordWrap='CJK',textColor=colors.HexColor(TEAL),keepWithNext=True),
 'caption':ParagraphStyle('caption',fontName='Yahei',fontSize=8.4,leading=13,spaceAfter=13,textColor=colors.HexColor(MUTED),wordWrap='CJK'),
 'quote':ParagraphStyle('quote',fontName='Yahei',fontSize=10.2,leading=18,backColor=colors.HexColor('#eef5f7'),borderPadding=9,spaceBefore=8,spaceAfter=14,wordWrap='CJK'),
-'cell':ParagraphStyle('cell',fontName='Yahei',fontSize=8.8,leading=14,wordWrap='CJK'),
+'cell':ParagraphStyle('cell',fontName='Yahei',fontSize=8.8,leading=14,autoLeading='max',wordWrap='CJK'),
 'code':ParagraphStyle('code',fontName='Yahei',fontSize=8.9,leading=14,wordWrap='CJK',backColor=colors.HexColor('#f0f4f6'),borderPadding=7,spaceAfter=10),
 }
-def inline(s):
+def inline(s,target='pdf',size=10.2):
+    maths=[]
+    def stash(m):
+        maths.append(m[1]);return f'MATHPLACEHOLDER{len(maths)-1}END'
+    s=re.sub(r'\$([^$\n]+)\$',stash,s)
     s=html.escape(s)
     s=re.sub(r'\[([^\]]+)\]\((https?://[^)]+)\)',lambda m:f'<a href="{m[2]}" color="#166d9c">{m[1]}</a>',s)
     s=re.sub(r'`([^`]+)`',r'<font color="#166d9c">\1</font>',s)
+    for n,tex in enumerate(maths):
+        s=s.replace(f'MATHPLACEHOLDER{n}END',inline_math(tex,target,size))
     return s
 class Doc(BaseDocTemplate):
     def __init__(self,path):
@@ -253,7 +289,7 @@ class Doc(BaseDocTemplate):
         if doc.page==1:return
         c.setStrokeColor(colors.HexColor('#d8e4e9'));c.line(46,808,549,808)
         c.setFont('Yahei',8);c.setFillColor(colors.HexColor(MUTED));c.drawString(46,818,'VLA / π 系列 / RTC / MEM / RL')
-        c.drawRightString(549,29,f'{doc.page:02d}');c.drawString(46,29,'技术核验：2026-10-25 · 原始资料见末章')
+        c.drawRightString(549,29,f'{doc.page:02d}');c.drawString(46,29,'技术核验：2026-10-25 · 全文符号修订：2026-10-27')
     def afterFlowable(self,f):
         if isinstance(f,Paragraph) and f.style.name=='h2' and re.match(r'^\d{2}',f.getPlainText()):
             t=f.getPlainText(); key='ch'+re.sub(r'[^0-9]','',t[:2]);self.canv.bookmarkPage(key);self.canv.addOutlineEntry(t,key,0)
@@ -265,7 +301,7 @@ for s,sz,col in [('具身智能 · 技术学习手册',13,TEAL),('VLA',58,INK),(
     story.append(Paragraph(s,ParagraphStyle('cover',fontName='YaheiBold',fontSize=sz,leading=sz*1.5,textColor=colors.HexColor(col),spaceAfter=12)))
 story.append(Spacer(1,20));story.append(RLImage(str(FIG/'01_system.png'),width=503,height=218))
 story.append(Spacer(1,22));story.append(Paragraph('22 个学习单元 · 18 张原创示意图 · 19 项原始资料<br/>公式、张量形状、训练参数、代码导航与自测答案',styles['body']))
-story.append(Paragraph('核验日期：2026 年 10 月 25 日<br/>论文事实 / 通用原理 / 教学示例 / 工程建议分开说明',styles['caption']))
+story.append(Paragraph('核验日期：2026 年 10 月 25 日<br/>全文符号修订版：2026 年 10 月 27 日<br/>论文事实 / 通用原理 / 教学示例 / 工程建议分开说明',styles['caption']))
 story.append(PageBreak())
 story.append(Paragraph('阅读目录',styles['h2']))
 toc=TableOfContents();toc.levelStyles=[ParagraphStyle('toc',fontName='Yahei',fontSize=10.5,leading=20,leftIndent=0,firstLineIndent=0,textColor=colors.HexColor(INK),wordWrap='CJK')]
@@ -275,13 +311,20 @@ lines=text.splitlines();i=1;html_parts=[];toc_html=[];chapter=0
 while i<len(lines):
     line=lines[i].strip()
     if not line:i+=1;continue
-    if line.startswith('## '):
+    if line=='$$':
+        equation=[];i+=1
+        while i<len(lines) and lines[i].strip()!='$$':equation.append(lines[i].strip());i+=1
+        assert i<len(lines),'Unclosed display math'
+        i+=1
+        math_flowable,math_html=display_math(' '.join(equation))
+        story.append(math_flowable);html_parts.append(math_html)
+    elif line.startswith('## '):
         title=line[3:];chapter+=1;anchor='section-'+str(chapter)
         story.append(PageBreak() if chapter in [1,7,11,14,17,22] else CondPageBreak(245));story.append(Paragraph(inline(title),styles['h2']))
         html_parts.append(f'<h2 id="{anchor}">{html.escape(title)}</h2>');toc_html.append(f'<a href="#{anchor}">{html.escape(title)}</a>');i+=1
     elif line.startswith('### '):
         if line[4:]=='答案与解释':story.append(PageBreak())
-        story.append(Paragraph(inline(line[4:]),styles['h3']));html_parts.append('<h3>'+inline(line[4:])+'</h3>');i+=1
+        story.append(Paragraph(inline(line[4:]),styles['h3']));html_parts.append('<h3>'+inline(line[4:],'html')+'</h3>');i+=1
     elif line.startswith('!['):
         m=re.match(r'!\[([^\]]+)\]\(([^)]+)\)',line);p=OUT/m[2];pic=Image.open(p);w=503;h=w*pic.height/pic.width
         story.append(KeepTogether([Spacer(1,6),RLImage(str(p),width=w,height=h),Spacer(1,5),Paragraph(inline(m[1])+' · 原创教学示意',styles['caption'])]))
@@ -296,11 +339,11 @@ while i<len(lines):
         cols=len(rows[0]); widths=[503/cols]*cols
         if cols==3:widths=[110,184,209]
         if cols==4:widths=[100,135,130,138]
-        cells=[[Paragraph(inline(x),styles['cell']) for x in row] for row in rows]
+        cells=[[Paragraph(inline(x,size=8.8),styles['cell']) for x in row] for row in rows]
         table=Table(cells,colWidths=widths,repeatRows=1,hAlign='LEFT')
         table.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#e7f1f4')),('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.white,colors.HexColor('#f8fafb')]),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),8),('RIGHTPADDING',(0,0),(-1,-1),8),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7),('LINEBELOW',(0,0),(-1,0),.6,colors.HexColor(LINE)),('LINEBELOW',(0,1),(-1,-1),.2,colors.HexColor('#e4ebef'))]))
         story.extend([table,Spacer(1,12)])
-        html_parts.append('<div class="tablewrap"><table>'+''.join('<tr>'+''.join(f'<{"th" if n==0 else "td"}>{inline(x)}</{"th" if n==0 else "td"}>' for x in row)+'</tr>' for n,row in enumerate(rows))+'</table></div>')
+        html_parts.append('<div class="tablewrap"><table>'+''.join('<tr>'+''.join(f'<{"th" if n==0 else "td"}>{inline(x,"html")}</{"th" if n==0 else "td"}>' for x in row)+'</tr>' for n,row in enumerate(rows))+'</table></div>')
     elif line.startswith('```'):
         code=[];i+=1
         while i<len(lines) and not lines[i].startswith('```'):code.append(lines[i]);i+=1
@@ -311,13 +354,13 @@ while i<len(lines):
     elif line.startswith('> '):
         q=[]
         while i<len(lines) and lines[i].startswith('> '):q.append(lines[i][2:]);i+=1
-        story.append(Paragraph('<br/>'.join(inline(x) for x in q),styles['quote']));html_parts.append('<blockquote>'+'<br/>'.join(inline(x) for x in q)+'</blockquote>')
+        story.append(Paragraph('<br/>'.join(inline(x) for x in q),styles['quote']));html_parts.append('<blockquote>'+'<br/>'.join(inline(x,'html') for x in q)+'</blockquote>')
     elif re.match(r'^\d+\. ',line):
-        story.append(Paragraph(inline(line),styles['body']));html_parts.append('<p>'+inline(line)+'</p>');i+=1
+        story.append(Paragraph(inline(line),styles['body']));html_parts.append('<p>'+inline(line,'html')+'</p>');i+=1
     else:
         p=[line];i+=1
-        while i<len(lines) and lines[i].strip() and not re.match(r'^(#|\||!\[|```|> |\d+\. )',lines[i]):p.append(lines[i].strip());i+=1
-        para=' '.join(p);story.append(Paragraph(inline(para),styles['body']));html_parts.append('<p>'+inline(para)+'</p>')
+        while i<len(lines) and lines[i].strip() and not re.match(r'^(#|\||!\[|```|> |\$\$|\d+\. )',lines[i]):p.append(lines[i].strip());i+=1
+        para=' '.join(p);story.append(Paragraph(inline(para),styles['body']));html_parts.append('<p>'+inline(para,'html')+'</p>')
 
 pdf=OUT/'VLA_详细图解讲义.pdf';doc=Doc(pdf);doc.multiBuild(story)
 
@@ -330,7 +373,11 @@ page='''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name
 </style></head><body><header><h1>VLA：从基础到 π 系列</h1><p>Transformer · 训练与微调 · RTC · MEM · RECAP · RLT</p><p>详细图解讲义 / 核验日期 2026-10-25 / 离线阅读版</p></header><main><div class="tools"><button onclick="window.print()">打印</button><button onclick="window.scrollTo({top:0,behavior:'smooth'})">回到顶部</button></div><p>浏览器内可用 Ctrl+F 全文检索；图片已嵌入，离线也能阅读。点击目录跳转，文末链接指向原始资料。</p><nav>'''+''.join(toc_html)+'</nav>'+calc+''.join(html_parts)+'''</main><script>
 function update(){let v=id=>Number(document.getElementById(id).value);let b=v('b'),D=v('dp'),G=v('g'),N=v('n'),f=v('hz'),H=v('h'),s=v('s'),lat=v('lat');let B=b*D*G;document.getElementById('batchout').textContent=[b,D,G,N].every(x=>Number.isInteger(x)&&x>0)?`有效 batch = ${B} 个窗口；每轮约 ${(N/B).toFixed(2)} 次更新（忽略丢尾）。`:'请填写正整数。';let d=Math.ceil(lat*f/1000),remain=H-s;document.getElementById('rtcout').textContent=f>0&&Number.isInteger(H)&&Number.isInteger(s)&&s>=0&&s<=H&&lat>=0?`延迟约 ${d} 个控制步；旧块剩余 ${remain} 步；${d<=remain?'等待覆盖条件满足':'旧块不够覆盖等待'}。预测跨度 ${(H/f).toFixed(2)} 秒。`:'请检查输入：0 ≤ s ≤ H，H、频率须为正。'}document.querySelectorAll('input').forEach(e=>e.addEventListener('input',update));update();
 </script></body></html>'''
+page=page.replace('</style>','body{overflow-wrap:anywhere}.math-inline{max-width:100%;height:auto!important;object-fit:contain}.math-display{overflow-x:auto;text-align:center;padding:16px 12px;margin:20px 0;background:#f4f8fa;line-height:1.3;break-inside:avoid}.math-display .math-inline{font-size:21px;vertical-align:middle!important;max-width:100%}@media print{.math-display{overflow:visible}}\n</style>')
+page=page.replace('B_eff=b×D×G',inline_math(r'B_{\mathrm{eff}}=b\times D\times G','html'))
+page=page.replace('详细图解讲义 / 核验日期 2026-10-25 / 离线阅读版','详细图解讲义 / 全文符号修订：2026-10-27 / 离线阅读版')
 (OUT/'VLA_详细图解讲义.html').write_text(page,encoding='utf-8')
-summary={'characters':len(text),'chinese_characters':len(re.findall(r'[\u4e00-\u9fff]',text)),'figures':len(list(FIG.glob('*.png'))),'chapters':chapter,'sources':19}
+math_manifest()
+summary={'characters':len(text),'chinese_characters':len(re.findall(r'[\u4e00-\u9fff]',text)),'figures':len(list(FIG.glob('*.png'))),'chapters':chapter,'sources':19,'math_expressions':len(MATH_CACHE)}
 (OUT/'build_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(summary))

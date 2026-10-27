@@ -1,0 +1,1570 @@
+[
+  {
+    "tex": "QK^{\\mathsf{T}}/\\sqrt{d_k}+M",
+    "width": 77.0,
+    "height": 19.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\272e67b5f4a74b27.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\272e67b5f4a74b27.svg"
+  },
+  {
+    "tex": "[8,6,3,H_{\\mathrm{img}},W_{\\mathrm{img}},3]",
+    "width": 107.0,
+    "height": 15.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\68fa1f934aa7ced8.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\68fa1f934aa7ced8.svg"
+  },
+  {
+    "tex": "[8,50,14]",
+    "width": 51.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c3602fbe593b0181.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c3602fbe593b0181.svg"
+  },
+  {
+    "tex": "X_\\tau=(1-\\tau)\\varepsilon+\\tau A",
+    "width": 89.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\97eae5e1168ec169.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\97eae5e1168ec169.svg"
+  },
+  {
+    "tex": "H\\times d_a",
+    "width": 34.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\03d580863c59b474.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\03d580863c59b474.svg"
+  },
+  {
+    "tex": "x",
+    "width": 8.0,
+    "height": 9.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2d711642b726b044.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2d711642b726b044.svg"
+  },
+  {
+    "tex": "o_t=\\{I_t^{(1)},\\ldots,I_t^{(C)},q_t\\}",
+    "width": 106.0,
+    "height": 18.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c5994f46f4d81d83.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c5994f46f4d81d83.svg"
+  },
+  {
+    "tex": "I",
+    "width": 6.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a83dd0ccbffe39d0.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a83dd0ccbffe39d0.svg"
+  },
+  {
+    "tex": "C",
+    "width": 11.0,
+    "height": 11.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\6b23c0d5f35d1b11.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\6b23c0d5f35d1b11.svg"
+  },
+  {
+    "tex": "q",
+    "width": 9.0,
+    "height": 11.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8e35c2cd3bf6641b.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8e35c2cd3bf6641b.svg"
+  },
+  {
+    "tex": "l",
+    "width": 6.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\acac86c0e609ca90.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\acac86c0e609ca90.svg"
+  },
+  {
+    "tex": "\\pi_\\theta",
+    "width": 13.0,
+    "height": 10.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\acfad27a31e66835.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\acfad27a31e66835.svg"
+  },
+  {
+    "tex": "\\theta",
+    "width": 8.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2b4af44cb17349bb.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2b4af44cb17349bb.svg"
+  },
+  {
+    "tex": "\\pi",
+    "width": 9.0,
+    "height": 9.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f1cf04093d08b6dc.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f1cf04093d08b6dc.svg"
+  },
+  {
+    "tex": "a_t \\sim \\pi_\\theta(a \\mid o_t,l)",
+    "width": 75.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2847603c8613b8b6.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2847603c8613b8b6.svg"
+  },
+  {
+    "tex": "A_t=[a_t,\\ldots,a_{t+H-1}] \\sim \\pi_\\theta(A \\mid o_t,l)",
+    "width": 167.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3ac7e825b56c6d09.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3ac7e825b56c6d09.svg"
+  },
+  {
+    "tex": "H",
+    "width": 11.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\44bd7ae60f478fae.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\44bd7ae60f478fae.svg"
+  },
+  {
+    "tex": "d_a",
+    "width": 13.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\943ac188116d74d8.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\943ac188116d74d8.svg"
+  },
+  {
+    "tex": "A_t",
+    "width": 13.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\82821bc2124f1658.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\82821bc2124f1658.svg"
+  },
+  {
+    "tex": "H \\times d_a",
+    "width": 34.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d4ddea3660a1ae70.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d4ddea3660a1ae70.svg"
+  },
+  {
+    "tex": "q_{\\mathrm{target}}",
+    "width": 28.0,
+    "height": 12.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\62d8fc7c6147a858.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\62d8fc7c6147a858.svg"
+  },
+  {
+    "tex": "\\Delta q",
+    "width": 17.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d8bf06f9971f1668.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d8bf06f9971f1668.svg"
+  },
+  {
+    "tex": "\\dot q",
+    "width": 9.0,
+    "height": 13.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\32d3a4a4c8991fbd.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\32d3a4a4c8991fbd.svg"
+  },
+  {
+    "tex": "q_t=10^\\circ",
+    "width": 43.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\979554a701da1ad2.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\979554a701da1ad2.svg"
+  },
+  {
+    "tex": "[12^\\circ,15^\\circ,14^\\circ]",
+    "width": 78.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\eb218744c5037bec.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\eb218744c5037bec.svg"
+  },
+  {
+    "tex": "[2^\\circ,5^\\circ,4^\\circ]",
+    "width": 60.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\521f891a364873c2.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\521f891a364873c2.svg"
+  },
+  {
+    "tex": "10^\\circ",
+    "width": 22.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\392c6f7a6493e568.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\392c6f7a6493e568.svg"
+  },
+  {
+    "tex": "[2^\\circ,3^\\circ,-1^\\circ]",
+    "width": 73.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ac569050df32d853.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ac569050df32d853.svg"
+  },
+  {
+    "tex": "[12^\\circ,17^\\circ,21^\\circ]",
+    "width": 78.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b64508e6dd8f109a.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b64508e6dd8f109a.svg"
+  },
+  {
+    "tex": "[2,3]",
+    "width": 28.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\18b058689d010062.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\18b058689d010062.svg"
+  },
+  {
+    "tex": "[B,C,H_{\\mathrm{img}},W_{\\mathrm{img}},3]",
+    "width": 99.0,
+    "height": 15.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\9f9a5416caf0852e.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\9f9a5416caf0852e.svg"
+  },
+  {
+    "tex": "B",
+    "width": 10.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\df7e70e5021544f4.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\df7e70e5021544f4.svg"
+  },
+  {
+    "tex": "H_{\\mathrm{img}}",
+    "width": 25.0,
+    "height": 14.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0693dfe78751b81e.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0693dfe78751b81e.svg"
+  },
+  {
+    "tex": "W_{\\mathrm{img}}",
+    "width": 26.0,
+    "height": 14.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\04b5473cfd2a1fa7.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\04b5473cfd2a1fa7.svg"
+  },
+  {
+    "tex": "3",
+    "width": 9.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4e07408562bedb8b.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4e07408562bedb8b.svg"
+  },
+  {
+    "tex": "[8,3,224,224,3]",
+    "width": 86.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5ba60cbc556b3d2b.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5ba60cbc556b3d2b.svg"
+  },
+  {
+    "tex": "[B,L]",
+    "width": 30.0,
+    "height": 12.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\9240c97ba9456a44.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\9240c97ba9456a44.svg"
+  },
+  {
+    "tex": "L",
+    "width": 9.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\72dfcfb0c470ac25.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\72dfcfb0c470ac25.svg"
+  },
+  {
+    "tex": "d_{\\mathrm{model}}",
+    "width": 30.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7d9caf91ce2d93a0.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7d9caf91ce2d93a0.svg"
+  },
+  {
+    "tex": "[B,L,d_{\\mathrm{model}}]",
+    "width": 63.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3b0162082f5114bf.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3b0162082f5114bf.svg"
+  },
+  {
+    "tex": "[8,20]",
+    "width": 34.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\02975ebf992b2d84.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\02975ebf992b2d84.svg"
+  },
+  {
+    "tex": "[8,20,256]",
+    "width": 57.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ef2c950fa64e6cc9.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ef2c950fa64e6cc9.svg"
+  },
+  {
+    "tex": "224\\times224",
+    "width": 51.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5810945c73c6a980.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5810945c73c6a980.svg"
+  },
+  {
+    "tex": "14\\times14",
+    "width": 39.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\719631d01be0460a.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\719631d01be0460a.svg"
+  },
+  {
+    "tex": "16\\times16=256",
+    "width": 70.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5c60a22805bf27f5.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5c60a22805bf27f5.svg"
+  },
+  {
+    "tex": "X",
+    "width": 10.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4b68ab3847feda7d.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4b68ab3847feda7d.svg"
+  },
+  {
+    "tex": "[L,d_{\\mathrm{model}}]",
+    "width": 50.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\40dc0b21123c0e15.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\40dc0b21123c0e15.svg"
+  },
+  {
+    "tex": "W_Q",
+    "width": 19.0,
+    "height": 14.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\eec3899a08cb4d2d.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\eec3899a08cb4d2d.svg"
+  },
+  {
+    "tex": "W_K",
+    "width": 19.0,
+    "height": 12.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e0f3a2c6c669d106.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e0f3a2c6c669d106.svg"
+  },
+  {
+    "tex": "W_V",
+    "width": 18.0,
+    "height": 12.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a6f257ab555fad60.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a6f257ab555fad60.svg"
+  },
+  {
+    "tex": "Q=XW_Q,\\qquad K=XW_K,\\qquad V=XW_V",
+    "width": 195.0,
+    "height": 14.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5590aaf0d584e520.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5590aaf0d584e520.svg"
+  },
+  {
+    "tex": "[1,2,3]",
+    "width": 39.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a615eeaee21de517.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a615eeaee21de517.svg"
+  },
+  {
+    "tex": "[0.5,0,-1]",
+    "width": 61.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\bb420b9d14e52c0d.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\bb420b9d14e52c0d.svg"
+  },
+  {
+    "tex": "1\\times0.5+2\\times0+3\\times(-1)=-2.5",
+    "width": 163.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7c12234a6b54ad3d.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7c12234a6b54ad3d.svg"
+  },
+  {
+    "tex": "[d_{\\mathrm{model}},d_k]",
+    "width": 54.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0bfca36777d6a8ec.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0bfca36777d6a8ec.svg"
+  },
+  {
+    "tex": "[d_{\\mathrm{model}},d_v]",
+    "width": 54.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c01346a8d61315fb.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c01346a8d61315fb.svg"
+  },
+  {
+    "tex": "Q",
+    "width": 11.0,
+    "height": 13.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4ae81572f06e1b88.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4ae81572f06e1b88.svg"
+  },
+  {
+    "tex": "K",
+    "width": 11.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\86be9a55762d316a.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\86be9a55762d316a.svg"
+  },
+  {
+    "tex": "d_k",
+    "width": 13.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\61f0cb69c9e8e1d3.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\61f0cb69c9e8e1d3.svg"
+  },
+  {
+    "tex": "V",
+    "width": 10.0,
+    "height": 11.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\de5a6f78116eca62.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\de5a6f78116eca62.svg"
+  },
+  {
+    "tex": "d_v",
+    "width": 13.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d3b6e2eaef5fb02a.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d3b6e2eaef5fb02a.svg"
+  },
+  {
+    "tex": "K^{\\mathsf{T}}",
+    "width": 17.0,
+    "height": 13.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\14a928f920a95d07.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\14a928f920a95d07.svg"
+  },
+  {
+    "tex": "QK^{\\mathsf{T}}",
+    "width": 26.0,
+    "height": 16.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\23b836383363e1f8.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\23b836383363e1f8.svg"
+  },
+  {
+    "tex": "[L,L]",
+    "width": 29.0,
+    "height": 12.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8bf8e06548e875da.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8bf8e06548e875da.svg"
+  },
+  {
+    "tex": "i",
+    "width": 6.0,
+    "height": 11.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\de7d1b721a1e0632.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\de7d1b721a1e0632.svg"
+  },
+  {
+    "tex": "j",
+    "width": 6.0,
+    "height": 13.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\189f40034be7a199.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\189f40034be7a199.svg"
+  },
+  {
+    "tex": "\\sqrt{d_k}",
+    "width": 27.0,
+    "height": 19.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\60009500bf24b659.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\60009500bf24b659.svg"
+  },
+  {
+    "tex": "M",
+    "width": 12.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\08f271887ce94707.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\08f271887ce94707.svg"
+  },
+  {
+    "tex": "\\operatorname{Attention}(Q,K,V)=\\operatorname{softmax}\\!\\left(\\frac{QK^{\\mathsf{T}}}{\\sqrt{d_k}}+M\\right)V",
+    "width": 205.0,
+    "height": 25.0,
+    "depth": 10.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0f084f7700246408.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0f084f7700246408.svg"
+  },
+  {
+    "tex": "t",
+    "width": 6.0,
+    "height": 10.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e3b98a4da31a127d.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e3b98a4da31a127d.svg"
+  },
+  {
+    "tex": "B=8",
+    "width": 29.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\453ba2a6b3fb0f75.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\453ba2a6b3fb0f75.svg"
+  },
+  {
+    "tex": "K=6",
+    "width": 30.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f5206862cb1a40a1.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f5206862cb1a40a1.svg"
+  },
+  {
+    "tex": "H=50",
+    "width": 36.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7731b8245cfe7006.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7731b8245cfe7006.svg"
+  },
+  {
+    "tex": "d_a=14",
+    "width": 38.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\6d145af3f9e4135c.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\6d145af3f9e4135c.svg"
+  },
+  {
+    "tex": "B_{\\mathrm{eff}}",
+    "width": 20.0,
+    "height": 12.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\71f8c0304ca936cb.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\71f8c0304ca936cb.svg"
+  },
+  {
+    "tex": "b",
+    "width": 9.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3e23e8160039594a.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3e23e8160039594a.svg"
+  },
+  {
+    "tex": "D",
+    "width": 11.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3f39d5c348e5b79d.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3f39d5c348e5b79d.svg"
+  },
+  {
+    "tex": "G",
+    "width": 11.0,
+    "height": 11.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\333e0a1e27815d0c.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\333e0a1e27815d0c.svg"
+  },
+  {
+    "tex": "B_{\\mathrm{eff}}=b\\times D\\times G",
+    "width": 81.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f173fdc50b5fd5e1.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f173fdc50b5fd5e1.svg"
+  },
+  {
+    "tex": "b=4",
+    "width": 28.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f71d423b05312024.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f71d423b05312024.svg"
+  },
+  {
+    "tex": "D=4",
+    "width": 30.0,
+    "height": 11.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7781a45ef3328472.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7781a45ef3328472.svg"
+  },
+  {
+    "tex": "G=8",
+    "width": 30.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4b5d5be8f2111a97.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4b5d5be8f2111a97.svg"
+  },
+  {
+    "tex": "B_{\\mathrm{eff}}=128",
+    "width": 51.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\af3bbdc6ac309260.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\af3bbdc6ac309260.svg"
+  },
+  {
+    "tex": "N=96{,}000",
+    "width": 57.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4cbd294a28c2a435.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4cbd294a28c2a435.svg"
+  },
+  {
+    "tex": "s",
+    "width": 7.0,
+    "height": 9.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\043a718774c572bd.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\043a718774c572bd.svg"
+  },
+  {
+    "tex": "N_{\\mathrm{flow}}",
+    "width": 26.0,
+    "height": 12.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7c472240dbfcba7e.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7c472240dbfcba7e.svg"
+  },
+  {
+    "tex": "f_{\\mathrm{ctrl}}",
+    "width": 18.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0aa9fb373f3f092b.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0aa9fb373f3f092b.svg"
+  },
+  {
+    "tex": "s=10",
+    "width": 32.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3268700f3cbd1ead.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3268700f3cbd1ead.svg"
+  },
+  {
+    "tex": "N_{\\mathrm{flow}}=10",
+    "width": 51.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2d3924a5e88a466f.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2d3924a5e88a466f.svg"
+  },
+  {
+    "tex": "a_{\\mathrm{norm}}=(a-\\mu)/\\sigma",
+    "width": 82.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\485077576becaa04.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\485077576becaa04.svg"
+  },
+  {
+    "tex": "[-1,1]",
+    "width": 36.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\471610700dbccc74.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\471610700dbccc74.svg"
+  },
+  {
+    "tex": "\\Delta W=(\\alpha/r)BA",
+    "width": 71.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ac44a173d9369202.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ac44a173d9369202.svg"
+  },
+  {
+    "tex": "W",
+    "width": 12.0,
+    "height": 11.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\fcb5f40df9be6bae.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\fcb5f40df9be6bae.svg"
+  },
+  {
+    "tex": "A",
+    "width": 10.0,
+    "height": 11.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\559aead08264d579.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\559aead08264d579.svg"
+  },
+  {
+    "tex": "r\\times d_{\\mathrm{in}}",
+    "width": 33.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2b810aa8f66137c9.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2b810aa8f66137c9.svg"
+  },
+  {
+    "tex": "d_{\\mathrm{out}}\\times r",
+    "width": 37.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\dcb0cd5e34696090.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\dcb0cd5e34696090.svg"
+  },
+  {
+    "tex": "r",
+    "width": 7.0,
+    "height": 8.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\454349e422f05297.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\454349e422f05297.svg"
+  },
+  {
+    "tex": "4096\\times4096",
+    "width": 63.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\95cb5b93439e9fca.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\95cb5b93439e9fca.svg"
+  },
+  {
+    "tex": "r=16",
+    "width": 32.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\72191fa3e39cb10c.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\72191fa3e39cb10c.svg"
+  },
+  {
+    "tex": "\\tau=0",
+    "width": 26.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8190a2c4b77178d6.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8190a2c4b77178d6.svg"
+  },
+  {
+    "tex": "\\tau=1",
+    "width": 26.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\42f68e5191e16e8e.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\42f68e5191e16e8e.svg"
+  },
+  {
+    "tex": "\\varepsilon\\sim\\mathcal{N}(0,I)",
+    "width": 56.0,
+    "height": 15.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c835466ce7b6cd46.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c835466ce7b6cd46.svg"
+  },
+  {
+    "tex": "u=A-\\varepsilon",
+    "width": 47.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\12bc4ba93e835ece.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\12bc4ba93e835ece.svg"
+  },
+  {
+    "tex": "X_\\tau",
+    "width": 14.0,
+    "height": 12.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\af0b891456b5344f.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\af0b891456b5344f.svg"
+  },
+  {
+    "tex": "\\tau",
+    "width": 7.0,
+    "height": 9.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\55d1823545b5b4c3.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\55d1823545b5b4c3.svg"
+  },
+  {
+    "tex": "o,l",
+    "width": 17.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\6a979a2739bdead9.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\6a979a2739bdead9.svg"
+  },
+  {
+    "tex": "v_\\theta",
+    "width": 12.0,
+    "height": 10.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b0cfe5fd5d923965.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b0cfe5fd5d923965.svg"
+  },
+  {
+    "tex": "\\mathcal{L}_{\\mathrm{flow}}=\\mathbb{E}\\!\\left[\\left\\|v_\\theta(X_\\tau,\\tau,o,l)-(A-\\varepsilon)\\right\\|^2\\right]",
+    "width": 177.0,
+    "height": 16.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7b0104e654d85098.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7b0104e654d85098.svg"
+  },
+  {
+    "tex": "X_0=\\varepsilon",
+    "width": 33.0,
+    "height": 12.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\200658bdcd70fdf7.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\200658bdcd70fdf7.svg"
+  },
+  {
+    "tex": "X_{\\tau+\\Delta\\tau}=X_\\tau+\\Delta\\tau\\,v_\\theta(X_\\tau,\\tau,o,l)",
+    "width": 145.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3b61a0b12296ee54.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3b61a0b12296ee54.svg"
+  },
+  {
+    "tex": "A=0.8",
+    "width": 38.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\22c60efce4b079d8.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\22c60efce4b079d8.svg"
+  },
+  {
+    "tex": "\\varepsilon=-0.4",
+    "width": 44.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7ff69c4758e20ae8.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7ff69c4758e20ae8.svg"
+  },
+  {
+    "tex": "\\tau=0.25",
+    "width": 41.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e210364e3f12c6ff.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e210364e3f12c6ff.svg"
+  },
+  {
+    "tex": "X_\\tau=-0.1",
+    "width": 50.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\858a041e95c3fa79.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\858a041e95c3fa79.svg"
+  },
+  {
+    "tex": "t=1",
+    "width": 25.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\35d8a879e1c1cb60.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\35d8a879e1c1cb60.svg"
+  },
+  {
+    "tex": "t=0",
+    "width": 25.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0eb4f782edc96275.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0eb4f782edc96275.svg"
+  },
+  {
+    "tex": "X_t=t\\varepsilon+(1-t)A",
+    "width": 85.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ea8092e7e587e13c.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ea8092e7e587e13c.svg"
+  },
+  {
+    "tex": "\\varepsilon-A",
+    "width": 28.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\39274a21cd14df10.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\39274a21cd14df10.svg"
+  },
+  {
+    "tex": "t=1-\\tau",
+    "width": 43.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f47feedf4b98cf7a.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f47feedf4b98cf7a.svg"
+  },
+  {
+    "tex": "A-\\varepsilon",
+    "width": 28.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\cc430656772b2bcc.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\cc430656772b2bcc.svg"
+  },
+  {
+    "tex": "k",
+    "width": 8.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8254c329a92850f6.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8254c329a92850f6.svg"
+  },
+  {
+    "tex": "c_k=\\alpha_k\\sum_{n=0}^{H-1}a_n\\cos\\!\\left[\\frac{\\pi(n+1/2)k}{H}\\right]",
+    "width": 131.0,
+    "height": 32.0,
+    "depth": 13.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\76b81f3f2a650c8f.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\76b81f3f2a650c8f.svg"
+  },
+  {
+    "tex": "n",
+    "width": 9.0,
+    "height": 9.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\1b16b1df538ba12d.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\1b16b1df538ba12d.svg"
+  },
+  {
+    "tex": "\\alpha_k",
+    "width": 13.0,
+    "height": 10.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\993a80257a1ce549.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\993a80257a1ce549.svg"
+  },
+  {
+    "tex": "\\hat{l}",
+    "width": 6.0,
+    "height": 15.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3f09729a83a1cdc9.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3f09729a83a1cdc9.svg"
+  },
+  {
+    "tex": "p(A,\\hat{l}\\mid o,l)=p(\\hat{l}\\mid o,l)\\,p(A\\mid o,\\hat{l})",
+    "width": 155.0,
+    "height": 17.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7d32dd330cd5453e.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\7d32dd330cd5453e.svg"
+  },
+  {
+    "tex": "z=f_\\theta(o,l)",
+    "width": 51.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ba78199542f58713.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ba78199542f58713.svg"
+  },
+  {
+    "tex": "\\mathcal{L}_{\\mathrm{CE}}(z)",
+    "width": 35.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8d31e8e97976f834.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8d31e8e97976f834.svg"
+  },
+  {
+    "tex": "\\mathcal{L}_{\\mathrm{FM}}(g_\\phi(\\operatorname{sg}(z),X_\\tau,\\tau))",
+    "width": 102.0,
+    "height": 15.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2fca1a7ad897107f.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2fca1a7ad897107f.svg"
+  },
+  {
+    "tex": "\\operatorname{sg}(z)",
+    "width": 26.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e60be879941b82ea.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e60be879941b82ea.svg"
+  },
+  {
+    "tex": "\\mathcal{L}_{\\mathrm{FM}}",
+    "width": 24.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2bb6356640b0d78c.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2bb6356640b0d78c.svg"
+  },
+  {
+    "tex": "\\phi",
+    "width": 10.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\10ce0200b450ea95.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\10ce0200b450ea95.svg"
+  },
+  {
+    "tex": "\\mathcal{L}_{\\mathrm{CE}}",
+    "width": 22.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d5644a0e45fda4f8.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d5644a0e45fda4f8.svg"
+  },
+  {
+    "tex": "448\\times448",
+    "width": 51.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e675a9342a4050ea.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e675a9342a4050ea.svg"
+  },
+  {
+    "tex": "\\Delta t=1/f",
+    "width": 40.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\43f770a9bf4d3666.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\43f770a9bf4d3666.svg"
+  },
+  {
+    "tex": "d",
+    "width": 9.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\18ac3e7343f01689.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\18ac3e7343f01689.svg"
+  },
+  {
+    "tex": "H-s",
+    "width": 29.0,
+    "height": 11.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\9ea4d1d36b8a41f9.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\9ea4d1d36b8a41f9.svg"
+  },
+  {
+    "tex": "d\\leq H-s",
+    "width": 48.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e543ecc21b2d2bc0.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e543ecc21b2d2bc0.svg"
+  },
+  {
+    "tex": "s=20",
+    "width": 32.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b19cd1db5ae847dd.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b19cd1db5ae847dd.svg"
+  },
+  {
+    "tex": "d=10",
+    "width": 34.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ba1224fdd87f19e7.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ba1224fdd87f19e7.svg"
+  },
+  {
+    "tex": "\\hat{A}=X_\\tau+(1-\\tau)v_\\theta(X_\\tau,\\tau,o)",
+    "width": 130.0,
+    "height": 17.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b0dda4075198cf82.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b0dda4075198cf82.svg"
+  },
+  {
+    "tex": "E=\\frac{1}{2}\\left\\|W\\odot(\\hat{A}-A_{\\mathrm{old,aligned}})\\right\\|^2",
+    "width": 151.0,
+    "height": 20.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\75fa893c6c70f3b7.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\75fa893c6c70f3b7.svg"
+  },
+  {
+    "tex": "E",
+    "width": 10.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a9f51566bd6705f7.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a9f51566bd6705f7.svg"
+  },
+  {
+    "tex": "d\\leq i<H-s",
+    "width": 64.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c5a601b0d9f484f6.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c5a601b0d9f484f6.svg"
+  },
+  {
+    "tex": "c_i=\\frac{H-s-i}{H-s-d+1}",
+    "width": 70.0,
+    "height": 17.0,
+    "depth": 6.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\1e32b88989d51492.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\1e32b88989d51492.svg"
+  },
+  {
+    "tex": "W_i=c_i\\,\\frac{\\exp(c_i)-1}{e-1}",
+    "width": 77.0,
+    "height": 18.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\9ba6a0f735508033.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\9ba6a0f735508033.svg"
+  },
+  {
+    "tex": "i<d",
+    "width": 25.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8830ae1397bcb3de.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8830ae1397bcb3de.svg"
+  },
+  {
+    "tex": "i\\geq H-s",
+    "width": 45.0,
+    "height": 12.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c74575c399498ff5.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c74575c399498ff5.svg"
+  },
+  {
+    "tex": "s_t",
+    "width": 10.0,
+    "height": 10.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4bca7afcafa97a49.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4bca7afcafa97a49.svg"
+  },
+  {
+    "tex": "o_t",
+    "width": 11.0,
+    "height": 10.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4a15af8f6ff25f74.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4a15af8f6ff25f74.svg"
+  },
+  {
+    "tex": "h_t",
+    "width": 11.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\480c877d455d2c2b.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\480c877d455d2c2b.svg"
+  },
+  {
+    "tex": "g",
+    "width": 9.0,
+    "height": 11.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\cd0aa9856147b6c5.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\cd0aa9856147b6c5.svg"
+  },
+  {
+    "tex": "m_t",
+    "width": 14.0,
+    "height": 10.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\6f3ae7d6b37bdd61.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\6f3ae7d6b37bdd61.svg"
+  },
+  {
+    "tex": "l_{t+1}",
+    "width": 22.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c6eb8f89539e9e65.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c6eb8f89539e9e65.svg"
+  },
+  {
+    "tex": "m_{t+1}",
+    "width": 27.0,
+    "height": 11.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a01fc42b9500ded3.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a01fc42b9500ded3.svg"
+  },
+  {
+    "tex": "p(A,l_{t+1},m_{t+1}\\mid h_t,m_t,g)",
+    "width": 124.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\788872c2ac162ca5.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\788872c2ac162ca5.svg"
+  },
+  {
+    "tex": "\\approx p_{\\mathrm{LL}}(A\\mid h_t^{\\mathrm{short}},l_{t+1},g)\\,p_{\\mathrm{HL}}(l_{t+1},m_{t+1}\\mid o_t,m_t,g)",
+    "width": 239.0,
+    "height": 17.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\1713020b54eab7ee.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\1713020b54eab7ee.svg"
+  },
+  {
+    "tex": "h_t^{\\mathrm{short}}",
+    "width": 27.0,
+    "height": 17.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\340a598f49567013.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\340a598f49567013.svg"
+  },
+  {
+    "tex": "P",
+    "width": 10.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5c62e091b8c0565f.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5c62e091b8c0565f.svg"
+  },
+  {
+    "tex": "KP",
+    "width": 18.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\26e40af730f13756.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\26e40af730f13756.svg"
+  },
+  {
+    "tex": "\\mathcal{O}(K^2P^2)",
+    "width": 47.0,
+    "height": 16.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\838a81dd71e70101.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\838a81dd71e70101.svg"
+  },
+  {
+    "tex": "\\mathcal{O}(KP^2)",
+    "width": 41.0,
+    "height": 16.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2625c61803ec6b2a.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2625c61803ec6b2a.svg"
+  },
+  {
+    "tex": "\\mathcal{O}(PK^2)",
+    "width": 41.0,
+    "height": 16.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\461484d24d73626b.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\461484d24d73626b.svg"
+  },
+  {
+    "tex": "a",
+    "width": 9.0,
+    "height": 9.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ca978112ca1bbdca.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\ca978112ca1bbdca.svg"
+  },
+  {
+    "tex": "\\gamma",
+    "width": 7.0,
+    "height": 11.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\67610b0632683369.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\67610b0632683369.svg"
+  },
+  {
+    "tex": "o",
+    "width": 9.0,
+    "height": 9.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\65c74c15a686187b.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\65c74c15a686187b.svg"
+  },
+  {
+    "tex": "G_t=r_t+\\gamma r_{t+1}+\\gamma^2 r_{t+2}+\\cdots",
+    "width": 142.0,
+    "height": 16.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b945b118f7780541.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b945b118f7780541.svg"
+  },
+  {
+    "tex": "V^\\pi(s)",
+    "width": 29.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c1b4fffe1011d5cd.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c1b4fffe1011d5cd.svg"
+  },
+  {
+    "tex": "Q^\\pi(s,a)",
+    "width": 41.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e6ec1f4919c4f831.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e6ec1f4919c4f831.svg"
+  },
+  {
+    "tex": "A^\\pi(s,a)=Q^\\pi(s,a)-V^\\pi(s)",
+    "width": 131.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c422fbcc3b67c8c9.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\c422fbcc3b67c8c9.svg"
+  },
+  {
+    "tex": "-C_{\\mathrm{fail}}",
+    "width": 30.0,
+    "height": 12.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\75dec3b5220fe1ff.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\75dec3b5220fe1ff.svg"
+  },
+  {
+    "tex": "(-1,0)",
+    "width": 36.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0c03060ab2f3e638.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0c03060ab2f3e638.svg"
+  },
+  {
+    "tex": "\\hat{A}_t=\\sum_{j=0}^{n-1}\\gamma^j r_{t+j}+\\gamma^n V(o_{t+n})-V(o_t)",
+    "width": 169.0,
+    "height": 33.0,
+    "depth": 14.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\593d4c834ed29bac.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\593d4c834ed29bac.svg"
+  },
+  {
+    "tex": "V(o_t)=-50",
+    "width": 60.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5f0947b1337487ad.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5f0947b1337487ad.svg"
+  },
+  {
+    "tex": "V(o_{t+5})=-30",
+    "width": 73.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e563e56a1f294af8.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\e563e56a1f294af8.svg"
+  },
+  {
+    "tex": "-5-30-(-50)=15",
+    "width": 108.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3fb8882110dd6f80.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\3fb8882110dd6f80.svg"
+  },
+  {
+    "tex": "I_t=\\mathbf{1}[\\hat{A}_t>\\varepsilon_l]",
+    "width": 68.0,
+    "height": 16.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\08ec104ffcfcb7fe.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\08ec104ffcfcb7fe.svg"
+  },
+  {
+    "tex": "\\varepsilon_l",
+    "width": 11.0,
+    "height": 10.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d37c9d6fee428fa8.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d37c9d6fee428fa8.svg"
+  },
+  {
+    "tex": "p_\\theta(A\\mid o,l,I)",
+    "width": 61.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f17e5f3abe44f256.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f17e5f3abe44f256.svg"
+  },
+  {
+    "tex": "p_\\theta(A\\mid o,l)",
+    "width": 51.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8c7c6cbb0147ca4f.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\8c7c6cbb0147ca4f.svg"
+  },
+  {
+    "tex": "z_1,\\ldots,z_M",
+    "width": 47.0,
+    "height": 10.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\797c79853991908e.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\797c79853991908e.svg"
+  },
+  {
+    "tex": "z_{\\mathrm{rl}}",
+    "width": 13.0,
+    "height": 10.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5b121678d947d588.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\5b121678d947d588.svg"
+  },
+  {
+    "tex": "A_{\\mathrm{ref}}",
+    "width": 20.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2ac81fe51d295c34.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\2ac81fe51d295c34.svg"
+  },
+  {
+    "tex": "x=(z_{\\mathrm{rl}},q)",
+    "width": 51.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f1e84c81af36a564.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f1e84c81af36a564.svg"
+  },
+  {
+    "tex": "A=A_{\\mathrm{ref}}+\\Delta A",
+    "width": 69.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\321f5f1424639f12.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\321f5f1424639f12.svg"
+  },
+  {
+    "tex": "\\gamma^C",
+    "width": 14.0,
+    "height": 16.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\9b0a88c7a5b1132f.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\9b0a88c7a5b1132f.svg"
+  },
+  {
+    "tex": "y=\\sum_{j=0}^{C-1}\\gamma^j r_{t+j}+(1-\\mathrm{done})\\gamma^C Q_{\\mathrm{target}}(x_{\\mathrm{next}},A_{\\mathrm{next}})",
+    "width": 227.0,
+    "height": 33.0,
+    "depth": 14.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0aef1e89fa46f186.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\0aef1e89fa46f186.svg"
+  },
+  {
+    "tex": "\\mathcal{L}_Q=\\mathbb{E}\\!\\left[(Q_\\psi(x,A)-y)^2\\right]",
+    "width": 117.0,
+    "height": 17.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d5ee05868de75155.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\d5ee05868de75155.svg"
+  },
+  {
+    "tex": "\\mathcal{L}_{\\mathrm{actor}}=\\mathbb{E}\\!\\left[-Q_\\psi(x,A)+\\beta\\left\\|A-A_{\\mathrm{ref}}\\right\\|^2\\right]",
+    "width": 178.0,
+    "height": 17.0,
+    "depth": 5.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\25d5d38cd0866109.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\25d5d38cd0866109.svg"
+  },
+  {
+    "tex": "\\beta",
+    "width": 9.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f3f3804480e8551a.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f3f3804480e8551a.svg"
+  },
+  {
+    "tex": "F",
+    "width": 10.0,
+    "height": 10.0,
+    "depth": 1.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f67ab10ad4e4c531.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f67ab10ad4e4c531.svg"
+  },
+  {
+    "tex": "B=16",
+    "width": 35.0,
+    "height": 12.0,
+    "depth": 2.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b82c084f37d66309.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b82c084f37d66309.svg"
+  },
+  {
+    "tex": "\\psi",
+    "width": 10.0,
+    "height": 11.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f301f970eb09c336.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\f301f970eb09c336.svg"
+  },
+  {
+    "tex": "N/B_{\\mathrm{eff}}",
+    "width": 31.0,
+    "height": 13.0,
+    "depth": 3.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a9c5f12b8850984d.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\a9c5f12b8850984d.svg"
+  },
+  {
+    "tex": "H/f",
+    "width": 18.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4a590bb288b765d6.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\4a590bb288b765d6.svg"
+  },
+  {
+    "tex": "A^\\pi=Q^\\pi-V^\\pi",
+    "width": 70.0,
+    "height": 14.0,
+    "depth": 4.0,
+    "png": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b5994848ba6f05f8.png",
+    "svg": "C:\\Users\\Lucas\\Documents\\ChatGPT\\VLA\\output\\math\\b5994848ba6f05f8.svg"
+  }
+]

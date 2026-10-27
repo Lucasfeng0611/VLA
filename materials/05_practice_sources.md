@@ -6,25 +6,25 @@
 
 |位置|阅读目标|需要避免的误解|
 |---|---|---|
-|README.md|模型清单、支持范围、环境与微调示例|论文全部能力不等于仓库全部实现|
-|src/openpi/models/pi0_config.py|action_dim、action_horizon、pi05 开关|32 维默认容量不等于真实机械臂维度|
-|src/openpi/models/pi0.py|prefix / suffix、compute_loss、sample_actions|flow 的 t 与论文 τ 方向不同|
-|src/openpi/training/config.py|数据变换、checkpoint、训练配置|类默认值可能被具体 recipe 覆盖|
-|src/openpi/transforms.py|归一化、delta 动作、token 化等|输入处理与输出逆变换必须成对|
-|scripts/train.py|实际 batch、优化器更新与日志|分片设备数不直接等于数据副本数|
+|`README.md`|模型清单、支持范围、环境与微调示例|论文全部能力不等于仓库全部实现|
+|`src/openpi/models/pi0_config.py`|action_dim、action_horizon、pi05 开关|32 维默认容量不等于真实机械臂维度|
+|`src/openpi/models/pi0.py`|prefix / suffix、compute_loss、sample_actions|flow 的 $t$ 与论文 $\tau$ 方向不同|
+|`src/openpi/training/config.py`|数据变换、checkpoint、训练配置|类默认值可能被具体 recipe 覆盖|
+|`src/openpi/transforms.py`|归一化、增量 动作、token 化等|输入处理与输出逆变换必须成对|
+|`scripts/train.py`|实际 batch、优化器更新与日志|分片设备数不直接等于数据副本数|
 
 ### 16.2 已核对的几个参数
 
 |字段 / 行为|快照中的值或说明|实际含义|
 |---|---|---|
-|Pi0Config.action_dim|32|模型动作向量容量，可含填充|
-|Pi0Config.action_horizon|50|每次预测 50 个动作时间位置|
-|max_token_len|π0 为 48，π0.5 为 200|对应文本等 tokenizer 的长度设定，不是全部视觉 token 上限|
+|`Pi0Config.action_dim`|32|模型动作向量容量，可含填充|
+|`Pi0Config.action_horizon`|50|每次预测 50 个动作时间位置|
+|`max_token_len`|π0 为 48，π0.5 为 200|对应文本等 tokenizer 的长度设定，不是全部视觉 token 上限|
 |dtype|bfloat16|模型配置中的计算类型，不表示所有状态都占 2 字节|
-|sample_actions.num_steps|默认 10|一次动作块生成的积分次数|
-|TrainConfig.batch_size|默认 32，标注为 global|需确认具体训练配置和后端是否覆盖|
-|num_train_steps|默认 30,000|优化更新预算，不能当成 30,000 个 episode|
-|ema_decay|默认 0.99|参数移动平均，可被 recipe 改动或禁用|
+|`sample_actions.num_steps`|默认 10|一次动作块生成的积分次数|
+|`TrainConfig.batch_size`|默认 32，标注为 global|需确认具体训练配置和后端是否覆盖|
+|`num_train_steps`|默认 30,000|优化更新预算，不能当成 30,000 个 episode|
+|`ema_decay`|默认 0.99|参数移动平均，可被 recipe 改动或禁用|
 
 README 明确说明，这个版本对 π0.5 的训练与推理支持 flow matching head。不要把持有该 checkpoint 等同于获得论文中全部高层子任务生成、FAST 联合训练和非机器人数据混合管线。不同 JAX / PyTorch 后端支持程度也可能不同，必须分别看对应脚本，不能仅凭相同配置字段推断功能一致。[S12]
 
@@ -56,14 +56,14 @@ README 明确说明，这个版本对 π0.5 的训练与推理支持 flow matchi
 
 |试验|保持一致的条件|唯一主要变化|要回答的问题|
 |---|---|---|---|
-|A|任务、评测集、控制定义|基础 checkpoint 直接运行|迁移起点如何？|
-|B|同上|加入目标任务示范微调|领域适应是否有效？|
-|C|B 的数据与预算|LoRA / 全量更新方式|资源节省的质量代价是什么？|
-|D|同一模型与评测|RTC 开 / 关|瓶颈是否来自延迟？|
-|E|相同数据覆盖|历史记忆建模|任务是否确实依赖过去？|
-|F|相同起点|经验 / 纠正 / RL 改进|收益是否超过额外交互成本？|
+|$A$|任务、评测集、控制定义|基础 checkpoint 直接运行|迁移起点如何？|
+|$B$|同上|加入目标任务示范微调|领域适应是否有效？|
+|$C$|$B$ 的数据与预算|LoRA / 全量更新方式|资源节省的质量代价是什么？|
+|$D$|同一模型与评测|RTC 开 / 关|瓶颈是否来自延迟？|
+|$E$|相同数据覆盖|历史记忆建模|任务是否确实依赖过去？|
+|$F$|相同起点|经验 / 纠正 / RL 改进|收益是否超过额外交互成本？|
 
-这里 E、F 是研究设计，不意味着公开 openpi 中已有一键 MEM / RECAP。若缺少对应组件，应先实现并验证接口，不要把一个模块名称当成可直接打开的参数。
+这里 $E$、$F$ 是研究设计，不意味着公开 openpi 中已有一键 MEM / RECAP。若缺少对应组件，应先实现并验证接口，不要把一个模块名称当成可直接打开的参数。
 
 ### 17.4 第四步：度量真实闭环
 
@@ -71,22 +71,22 @@ README 明确说明，这个版本对 π0.5 的训练与推理支持 flow matchi
 
 ![图17：验证必须覆盖数据、策略和运行系统](figures/17_eval.png)
 
-教学统计例：20 次试验成功 16 次，点估计是 80%，但样本很少，不能把它讲成精确到个位数的真实成功率。模型 B 成功 17 次也不足以直接证明比 A 显著更好。需要更多试验、相同条件的配对比较或适当置信区间，并明确失败与超时计入规则。
+教学统计例：20 次试验成功 16 次，点估计是 80%，但样本很少，不能把它讲成精确到个位数的真实成功率。模型 $B$ 成功 17 次也不足以直接证明比 $A$ 显著更好。需要更多试验、相同条件的配对比较或适当置信区间，并明确失败与超时计入规则。
 
-吞吐也可能与成功率相冲突。教学例：策略 A 每次平均 20 秒、成功率 80%；策略 B 每次平均 10 秒、成功率 70%。忽略重置的近似成功吞吐分别为 2.4 和 4.2 次 / 分钟；若 B 的失败需要长时间人工重置，实际优势可能消失。真正应报告全程测得的成功数 / 总时间。
+吞吐也可能与成功率相冲突。教学例：策略 $A$ 每次平均 20 秒、成功率 80%；策略 $B$ 每次平均 10 秒、成功率 70%。忽略重置的近似成功吞吐分别为 2.4 和 4.2 次 / 分钟；若 $B$ 的失败需要长时间人工重置，实际优势可能消失。真正应报告全程测得的成功数 / 总时间。
 
 ### 17.5 常见故障排查
 
 |现象|优先检查|不要先做什么|
 |---|---|---|
-|loss 低，机器人方向相反|动作坐标系、单位、delta 逆变换|盲目加模型规模|
-|每个 chunk 边界停顿|同步调用、队列、端到端延迟|只加训练 epoch|
+|loss 低，机器人方向相反|动作坐标系、单位、增量 逆变换|盲目加模型规模|
+|每个 动作块 边界停顿|同步调用、队列、端到端延迟|只加训练 epoch|
 |切块抽动|时间对齐、旧前缀、模式切换|直接假定平均动作一定安全|
 |完全不听语言|任务与场景捷径、指令多样性、遗忘|只扩大图像分辨率|
 |验证好，换房间失败|场景泄漏、相机视角、数据覆盖|只报告随机帧划分结果|
 |重复同一种失败|历史条件、失败恢复数据、状态覆盖|把所有问题都归因于采样随机性|
 |RL 越训越激进|奖励尺度、critic 偏差、参考正则、数据支持|仅继续提高学习率|
-|接上 MEM 后超时|视频编码成本、缓存、K、调度|把固定输出 token 当零额外成本|
+|接上 MEM 后超时|视频编码成本、缓存、$K$、调度|把固定输出 token 当零额外成本|
 
 ## 18｜贯穿案例：整理厨房时，各方法分别在做什么
 
@@ -100,18 +100,18 @@ README 明确说明，这个版本对 π0.5 的训练与推理支持 flow matchi
 
 ![图18：厨房任务中的方法分工](figures/18_case.png)
 
-这个案例也展示兼容性边界：MEM 记忆应根据实际执行更新；RLT 修改动作后，RTC 应读取修改后的承诺前缀；高层切换子任务时，要决定旧 chunk 继续多久；RL replay 应记录真实动作与对应观测版本。把每个模块独立跑通，只是系统整合的开始。
+这个案例也展示兼容性边界：MEM 记忆应根据实际执行更新；RLT 修改动作后，RTC 应读取修改后的承诺前缀；高层切换子任务时，要决定旧 动作块 继续多久；RL replay 应记录真实动作与对应观测版本。把每个模块独立跑通，只是系统整合的开始。
 
 ## 19｜检查理解：十五问与答案
 
 ### 问题
 
-1. B=16、H=50 是否意味着 batch size=800？
+1. $B=16$、$H=50$ 是否意味着 批量为 800？
 2. 梯度累计 8 次是否等于把一个动作块执行 8 次？
 3. 50 Hz 控制是否要求完整大模型推理每次少于 20 ms？
 4. Transformer 的所有 token 都是离散 ID 吗？
 5. flow matching 的 velocity 一定是关节物理速度吗？
-6. 为什么论文目标 A−ε 和 openpi 目标 ε−A 都可能正确？
+6. 为什么论文目标 $A-\varepsilon$ 和 openpi 目标 $\varepsilon-A$ 都可能正确？
 7. FAST 训练快，为什么推理可能慢？
 8. stop-gradient 是否等于冻结整个 VLM？
 9. π0.5 的公开 flow checkpoint 是否自动包含全部论文体系？
@@ -124,7 +124,7 @@ README 明确说明，这个版本对 π0.5 的训练与推理支持 flow matchi
 
 ### 答案与解释
 
-1. 不是。B=16 个观测锚点样本，每个标签含 50 个相关未来动作。800 是动作时间位置数。
+1. 不是。$B=16$ 个观测锚点样本，每个标签含 50 个相关未来动作。800 是动作时间位置数。
 2. 不是。前者发生在参数优化循环，后者是环境执行；它们的时间尺度与变量完全不同。
 3. 不一定。可以低频预测动作块，由控制器高频消费；但必须有实时调度与足够队列余量。
 4. 不是。图像 patch、连续状态和连续动作可以用向量 token；离散文字和 FAST token 只是其中一类。
@@ -144,17 +144,17 @@ README 明确说明，这个版本对 π0.5 的训练与推理支持 flow matchi
 
 |符号 / 术语|本讲义含义|容易混淆的对象|
 |---|---|---|
-|t|真实机器人控制时间索引|flow 生成时间|
-|τ|噪声到动作的生成时间，0→1|openpi 反向时间 t，1→0|
-|B|训练样本 batch 数|机器人自由度、动作块长度|
-|K|短期历史帧数|attention 的 Key 矩阵，需看上下文|
-|H|VLA 预测动作步数|实际执行步数 s|
-|d_a|每步动作维数|RTC 延迟步数 d|
-|d|RTC 推理延迟，以控制步计|动作 embedding 宽度|
-|s|执行 / 重规划间隔所用 horizon|MDP 状态 s，需看章节|
-|C|RLT 实际动作块步数|前文相机数量 C，需看章节|
-|θ、φ、ψ|策略、辅助模块、价值模型等参数|固定数学常数|
-|V、Q、A|状态价值、动作价值、优势|动作块 A，需看章节|
+|$t$|真实机器人控制时间索引|flow 生成时间|
+|$\tau$|噪声到动作的生成时间，0→1|openpi 反向时间 $t$，1→0|
+|$B$|训练样本 batch 数|机器人自由度、动作块长度|
+|$K$|短期历史帧数|attention 的 Key 矩阵，需看上下文|
+|$H$|VLA 预测动作步数|实际执行步数 $s$|
+|$d_a$|每步动作维数|RTC 延迟步数 $d$|
+|$d$|RTC 推理延迟，以控制步计|动作 embedding 宽度|
+|$s$|执行 / 重规划间隔所用 horizon|MDP 状态 $s$，需看章节|
+|$C$|RLT 实际动作块步数|前文相机数量 $C$，需看章节|
+|$\theta$、$\phi$、$\psi$|策略、辅助模块、价值模型等参数|固定数学常数|
+|$V$、$Q$、$A$|状态价值、动作价值、优势|动作块 $A$，需看章节|
 |BC|Behavioral Cloning，行为克隆|所有形式的强化学习|
 |VLM / VLA|视觉语言 / 视觉语言动作模型|普通文本模型|
 |KI|Knowledge Insulation，知识隔离|全骨干冻结|
@@ -163,33 +163,33 @@ README 明确说明，这个版本对 π0.5 的训练与推理支持 flow matchi
 |RECAP|经验与纠正驱动的优势条件策略学习|单纯成功轨迹筛选或通用 PPO|
 |RLT|RL Token 路线|给奖励数值加个文字 token|
 
-关键公式汇总：有效 batch = b×D×G；固定集合每轮更新约 N/B_eff；动作覆盖时间 H/f；RTC 等待覆盖条件 d≤H−s；flow 路径 Xτ=(1−τ)ε+τA；flow 目标 A−ε；优势 Aπ=Qπ−Vπ；chunk TD bootstrap 使用 γ^C。所有公式都依赖正文说明的计数与时间约定。
+关键公式汇总：有效批量 $B_{\mathrm{eff}}=b\times D\times G$；固定集合每轮更新约 $N/B_{\mathrm{eff}}$；动作覆盖时间 $H/f$；RTC 等待覆盖条件 $d\leq H-s$；flow 路径 $X_\tau=(1-\tau)\varepsilon+\tau A$；flow 目标 $A-\varepsilon$；优势 $A^\pi=Q^\pi-V^\pi$；动作块 TD bootstrap 使用 $\gamma^C$。所有公式都依赖正文说明的计数与时间约定。
 
 ## 21｜原始资料、阅读顺序与证据边界
 
 建议先读 π0 的架构与 flow 部分，再读 FAST、π0.5、KI；随后读 RTC 和训练时 RTC；最后按 MEM、π*0.6、RLT、π0.7 的顺序理解系统整合。论文的附录往往比摘要更能回答“具体怎么训练”。
 
-[S1] Physical Intelligence，π0: A Vision-Language-Action Flow Model for General Robot Control。重点：§IV、§V、附录B-D。[论文 PDF](https://www.pi.website/download/pi0.pdf)；[官方介绍](https://www.pi.website/blog/pi0)。
+[S1] Physical Intelligence，π0: $A$ Vision-Language-Action Flow Model for General Robot Control。重点：§IV、§$V$、附录$B$-$D$。[论文 PDF](https://www.pi.website/download/pi0.pdf)；[官方介绍](https://www.pi.website/blog/pi0)。
 
 [S2] Kim 等，OpenVLA: An Open-Source Vision-Language-Action Model，2024。用于对照离散动作 VLA 与预训练迁移。[论文](https://arxiv.org/abs/2406.09246)。
 
 [S3] Pertsch 等，FAST: Efficient Action Tokenization for Vision-Language-Action Models，2025。重点：DCT、量化、BPE、训练与推理权衡。[论文全文](https://arxiv.org/html/2501.09747v1)；[官方介绍](https://www.pi.website/research/fast)。
 
-[S4] Physical Intelligence，π0.5: a Vision-Language-Action Model with Open-World Generalization，2025。重点：§IV 的数据混合、两阶段与高低层分解。[论文 PDF](https://www.pi.website/download/pi05.pdf)；[官方介绍](https://www.pi.website/blog/pi05)。
+[S4] Physical Intelligence，π0.5: $a$ Vision-Language-Action Model with Open-World Generalization，2025。重点：§IV 的数据混合、两阶段与高低层分解。[论文 PDF](https://www.pi.website/download/pi05.pdf)；[官方介绍](https://www.pi.website/blog/pi05)。
 
 [S5] Driess 等，Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better，2025。重点：§5 的分支、mask 与 stop-gradient。[论文 PDF](https://www.pi.website/download/pi05_KI.pdf)；[官方介绍](https://www.pi.website/research/knowledge_insulation)。
 
 [S6] Black、Galliker、Levine，Real-Time Execution of Action Chunking Flow Policies，2025。重点：§3-4、式5、算法1。[论文全文](https://arxiv.org/html/2506.07339v1)；[官方介绍](https://www.pi.website/research/real_time_chunking)。
 
-[S7] Black 等，Training-Time Action Conditioning for Efficient Real-Time Chunking，2025。重点：§IV、§V-B。本文伪代码使用自洽的噪声→动作时间约定，复现请核对原算法符号。[论文全文](https://arxiv.org/html/2512.05964v1)。
+[S7] Black 等，Training-Time Action Conditioning for Efficient Real-Time Chunking，2025。重点：§IV、§$V$-$B$。本文伪代码使用自洽的噪声→动作时间约定，复现请核对原算法符号。[论文全文](https://arxiv.org/html/2512.05964v1)。
 
-[S8] Physical Intelligence，π*0.6: a VLA that Learns from Experience，2025。重点：§IV-V 的 RECAP、奖励和价值估计，附录F。[论文 PDF](https://www.pi.website/download/pistar06.pdf)；[官方介绍](https://www.pi.website/blog/pistar06)。
+[S8] Physical Intelligence，π*0.6: $a$ VLA that Learns from Experience，2025。重点：§IV-$V$ 的 RECAP、奖励和价值估计，附录$F$。[论文 PDF](https://www.pi.website/download/pistar06.pdf)；[官方介绍](https://www.pi.website/blog/pistar06)。
 
-[S9] Torne 等，MEM: Multi-Scale Embodied Memory for Vision Language Action Models，2026。重点：§III-A-D、记忆监督和视频编码。[论文 PDF](https://www.pi.website/download/Mem.pdf)；[官方介绍](https://www.pi.website/research/memory)。
+[S9] Torne 等，MEM: Multi-Scale Embodied Memory for Vision Language Action Models，2026。重点：§III-$A$-$D$、记忆监督和视频编码。[论文 PDF](https://www.pi.website/download/Mem.pdf)；[官方介绍](https://www.pi.website/research/memory)。
 
-[S10] Xu 等，RL Token: Bootstrapping Online RL with Vision-Language-Action Models，2026。重点：§IV-V、actor-critic 目标和关键阶段切换。[论文全文](https://arxiv.org/html/2604.23073v1)；[官方介绍](https://www.pi.website/research/rlt)。
+[S10] Xu 等，RL Token: Bootstrapping Online RL with Vision-Language-Action Models，2026。重点：§IV-$V$、actor-critic 目标和关键阶段切换。[论文全文](https://arxiv.org/html/2604.23073v1)；[官方介绍](https://www.pi.website/research/rlt)。
 
-[S11] Physical Intelligence，π0.7: a Steerable Model with Emergent Capabilities，2026。重点：§IV-VII、metadata、目标图像、历史编码与异步运行。[论文 PDF](https://www.pi.website/download/pi07.pdf)；[官方介绍](https://www.pi.website/blog/pi07)。
+[S11] Physical Intelligence，π0.7: $a$ Steerable Model with Emergent Capabilities，2026。重点：§IV-VII、metadata、目标图像、历史编码与异步运行。[论文 PDF](https://www.pi.website/download/pi07.pdf)；[官方介绍](https://www.pi.website/blog/pi07)。
 
 [S12] Physical Intelligence，openpi 官方代码。本文快照 commit：215abfb217dbac7d5f1273282331b9b1866c0479。[固定版本仓库](https://github.com/Physical-Intelligence/openpi/tree/215abfb217dbac7d5f1273282331b9b1866c0479)；[模型实现](https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/src/openpi/models/pi0.py)；[模型配置](https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/src/openpi/models/pi0_config.py)；[训练配置](https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/src/openpi/training/config.py)。
 
